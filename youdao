@@ -1,0 +1,8 @@
+#! /bin/sh
+if [ -z "$1" ]
+then
+    echo "Usage youdao [word]"
+else
+    w3m "http://dict.youdao.com/search?q=$1" | grep • | sed '1,5d; s/•//g; s/^ *//g; s/[0-9].*//g; /[A-Z]/d; /\.$/d; /:$/d; /\^$/d; /中/d; s/-.*//g; /^ *$/d'
+    # w3m "http://dict.youdao.com/search?q=$1" | grep •
+fi

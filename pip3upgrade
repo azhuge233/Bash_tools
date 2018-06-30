@@ -1,0 +1,4 @@
+pip3 list --outdated | sed '/Cache entry/d; /Package/d; /-/d; s/[0-9]*\..*//g; s/ //g;' > list3.txt
+sudo pip3 install --upgrade -r list3.txt
+rm list3.txt
+
