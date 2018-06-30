@@ -1,5 +1,13 @@
 # Bash_tools
 
+1. chmod +x 给脚本权限
+
+   remember to give script privilege
+
+2. ln -s 链接到 /usr/local/bin/
+
+   link the script to /usr/local/bin/
+
 - pip2upgrade —— pip2升级包 [pip2 install -U packages] 
 - pip3upgrade —— python3升级依赖 [pip3 install --upgrade packages]
 - youdao —— 使用有道词典查单词 [translate English words to Chinese]
