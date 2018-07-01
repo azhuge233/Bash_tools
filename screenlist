@@ -1,0 +1,2 @@
+screen -r | sed '1d; $d; s/\..*//g;' | awk -v RS="" '{gsub("\n", ""); sub("\t", ""); gsub("\t", " "); print;}'
+
