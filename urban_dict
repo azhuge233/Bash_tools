@@ -1,7 +1,7 @@
 #! /bin/sh
 if [ -z "$1" ]
 then
-    echo "Usage ub [word]"
+    echo "Usage urban_dict [word]"
 else
     w3m "https://www.urbandictionary.com/define.php?term=$1" | sed '1,5d; /□/d; /\[/d; /•/d; /©/d; /Get the mug/d; /Get a/d; /Categories/d; /advertise terms of service/d; /privacy dmca remove/d; /help chat/d; /Activity/d; /Alphabetical list/d; /Quantcast/d; /by/d; /#/d; /^ *$/d; s/^[0-9]$/------------------------------------------------------------------------------/g; /^[0-9]*$/d; ' | sed '15,$d'
 fi
