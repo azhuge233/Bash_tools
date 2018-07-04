@@ -1,5 +1,5 @@
 #! /bin/sh
-ifconfig | grep inet | sed '/127.0.0.1/d; /inet6/d; s/inet//g; s/ netmask.*//g;' | awk '{gsub(" ", ""); gsub("\t", ""); print}' | sed 's/[0-9]*$/1\/24/' > targets.txt
+ifconfig | grep inet | sed '/127.0.0.1/d; /inet6/d; s/inet//g; s/addr://g; s/ netmask.*//g; s/ Bcast:.*//g' | awk '{gsub(" ", ""); gsub("\t", ""); print}' | sed 's/[0-9]*$/1\/24/' > targets.txt
 sudo nmap -F -iL targets.txt | sed '1d; s/Nmap scan report for //g'
 rm targets.txt
 
