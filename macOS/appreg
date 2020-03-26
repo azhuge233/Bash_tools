@@ -1,0 +1,7 @@
+#! /bin/sh
+if [ -z "$1" ]
+then
+	echo "Usage appreg [the application path (normally is /Application/xxx.app)]"
+else
+	sudo xattr -r -d com.apple.quarantine "$1"
+fi

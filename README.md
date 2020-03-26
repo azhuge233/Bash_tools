@@ -18,3 +18,5 @@
   - 需要先安装screen [install screen first]
 - nmap_qscan —— nmap内网快速扫描（AB类地址需要修改sed处的子网掩码）[If you are using class A or class B address, you have to change the subnet mask at the last 'sed' command in the second line]
   - 需要先安装nmap [install nmap first]
+- appreg(macOS 文件夹下) —— 解决 macOS xxx.app 无法打开问题 [(under macOS directory) solve "cannot open xxx.app" issue in macOS]
+- dnsflush(macOS 文件夹下) —— macOS 下刷新 DNS 缓存 [(under macOS directory) flush dns cache in macOS]
