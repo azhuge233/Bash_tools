@@ -1,0 +1,8 @@
+#! /bin/sh
+PATH=/bin::/usr/bin
+if [ -z "$1" ]
+then
+	echo "Usage: volumeset [0-100]"
+else
+	osascript -e "set volume output volume $1"
+fi
