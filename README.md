@@ -28,4 +28,5 @@
   - delRelocatedItems: 删除每次系统更新后的「迁移的项目」
   - killreddot: 删除系统偏好设置的系统更新红点
   - volumeset: 在终端调整系统音量大小
+  - addBlankDockIcon: 在 Dock 添加空白图标
 
